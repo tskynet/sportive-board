@@ -18,10 +18,10 @@ class App extends React.Component{
     return(
       <div>
         <h1> Lorem Ipsum </h1>
-        <form className="form" onSubmit={e => this.showListing(e)}>
+        <form className="form" onSubmit={e => this.showListing(e)}> // onSubmit will launch ContainerList component
           <button type="submit">show listing !</button>
         </form>
-        <form className="form" onSubmit={e => this.addListing(e)}>
+        <form className="form" onSubmit={e => this.addListing(e)}> // onSubmit will launch ContainerAddList component
           <button type="submit">add on list !</button>
         </form>
       </div>
