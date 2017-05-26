@@ -1,5 +1,6 @@
 import React from 'react';
 
+import '../style/app.css';
 class App extends React.Component{
 
   showListing  = (event) => {
@@ -17,12 +18,12 @@ class App extends React.Component{
   render(){
     return(
       <div>
-        <h1> Lorem Ipsum </h1>
-        <form className="form" onSubmit={e => this.showListing(e)}> // onSubmit will launch ContainerList component
-          <button type="submit">show listing !</button>
+        <h1 className="text-center">Welcome {this.props.params.pseudo} !</h1>
+        <form className="form" onSubmit={e => this.showListing(e)}> 
+          <button type="submit" className="btn btn-info">show listing !</button>
         </form>
-        <form className="form" onSubmit={e => this.addListing(e)}> // onSubmit will launch ContainerAddList component
-          <button type="submit">add on list !</button>
+        <form className="form" onSubmit={e => this.addListing(e)}> 
+          <button type="submit" className="btn btn-info">add on list !</button>
         </form>
       </div>
     )
