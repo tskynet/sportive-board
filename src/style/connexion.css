@@ -1,0 +1,11 @@
+.connexionBox{
+	background:rgb(3,169,244);
+	max-width: 600px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:10px;
+	text-align:center;
+}
+.connexionBox h3{
+	font-size:30px;
+}

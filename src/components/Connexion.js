@@ -1,5 +1,8 @@
 import React from 'react';
 
+//import du css pour la connexion
+import '../style/connexion.css';
+
 class Connexion extends React.Component{
 
   //startApp -> function use on submit our form, for take pseudo and start App component
@@ -11,10 +14,12 @@ class Connexion extends React.Component{
 
   render(){
     return(
+
       <div className="connexionBox" onSubmit={e => this.startApp(e)}>
+        <h3>Connexion to Sportive Board !</h3>
         <form className="connexion">
-          <input type="text" placeholder="pseudo" ref={input => this.pseudoInput = input}/>
-          <button type="submit">Start ! </button>
+          <input type="text" className="form-control" placeholder="pseudo" ref={input => this.pseudoInput = input}/>
+          <button type="submit" className="btn btn-primary">Start ! </button>
         </form>
       </div>
     )

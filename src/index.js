@@ -11,6 +11,8 @@ import ContainerAddList from './components/ContainerAddList';
 // Router
 import { BrowserRouter, Match, Miss} from 'react-router';
 
+//style
+import './style/css/bootstrap.min.css';
 const Root= () =>{
   return(
     <BrowserRouter>
