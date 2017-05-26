@@ -1,8 +1,13 @@
 import React from 'react';
+import base from '../base';
 import '../style/listing.css';
 class Listing extends React.Component{
 
+
+
+
   render(){
+    
     return(
       <div className="listing">
         <ul className="list-style">
