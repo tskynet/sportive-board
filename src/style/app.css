@@ -1,4 +1,7 @@
-.form{
+.app {
+	padding-bottom : 20px;
+}
+.app .form{
 	display:inline-block;
 	padding-left:10px;
 }

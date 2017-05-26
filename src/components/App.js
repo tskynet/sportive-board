@@ -13,11 +13,11 @@ class App extends React.Component{
     event.preventDefault();
     const pseudo = (this.props.params.pseudo);
     this.context.router.transitionTo(`/pseudo/${pseudo}/addlist`);
-  }
+  };
 
   render(){
     return(
-      <div>
+      <div className="app">
         <h1 className="text-center">Welcome {this.props.params.pseudo} !</h1>
         <form className="form" onSubmit={e => this.showListing(e)}> 
           <button type="submit" className="btn btn-info">show listing !</button>

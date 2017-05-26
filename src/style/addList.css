@@ -1,0 +1,7 @@
+.addList .form .form-control{
+	display:inline-block;
+	width:50%;
+}
+.addList .form .btn-info{
+	width:auto;
+}

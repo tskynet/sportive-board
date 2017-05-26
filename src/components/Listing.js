@@ -1,11 +1,11 @@
 import React from 'react';
-
+import '../style/listing.css';
 class Listing extends React.Component{
 
   render(){
     return(
-      <div>
-        <ul>
+      <div className="listing">
+        <ul className="list-style">
           <li>Lorem Ipsum</li>
           <li>Lorem Ipsum</li>
           <li>Lorem Ipsum</li>
