@@ -1,3 +1,13 @@
+.listing ul{
+	margin:0 0 5px 0;
+	padding:0 10px 0 10px;
+
+}
+
 .listing ul li{
-	
+	border:2px solid #46b8da;
+	padding:2px 10px 2px 10px;
+	border-radius:20px;
+	background:#5bc0de;
+	list-style:none;
 }

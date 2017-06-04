@@ -1,7 +1,11 @@
 .addList .form .form-control{
-	display:inline-block;
-	width:50%;
+	display:block;
+	max-width:400px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:5px;
 }
 .addList .form .btn-info{
 	width:auto;
 }
+
