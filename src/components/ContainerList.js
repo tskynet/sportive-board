@@ -21,7 +21,9 @@ class ContainerList extends React.Component{
     return(
       <div>
       	<h3 className="text-center">List of your seances !</h3>
+
         {seances}
+
       </div>
     )
   }

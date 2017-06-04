@@ -7,7 +7,8 @@ class Listing extends React.Component{
     return(
       <div>
         <ul>
-          <li>{this.props.seance}</li>
+          <li><b>{this.props.seance[1]}</b> {this.props.seance[0]} <i>Duration : {this.props.seance[2]} min !</i></li>
+ 
 
         </ul>
 
