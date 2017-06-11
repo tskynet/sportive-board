@@ -15,23 +15,25 @@ class AddList extends React.Component{
     seances: {}
   }
   componentWillMount(){
-    this.ref = base.syncState('/', {
+    this.ref = base.syncState('/seance/', {
       context: this,
       state: 'seances'
     });
   }
   addList= (event) =>{
   event.preventDefault();
+  // on recupere la valeur des inputs et on les pushs dans le tableau "tableau"
   const seance = this.addSeance.value;
   const date = this.addDate.value;
   var time= this.setTime.value;
   const tableau = [seance, date, time];
-  const seances = {...this.state.messages};
-
+  
+  const seances = {...this.state.seances};
+  //on set une clé unique pour notre valeur à stocker en BDD puis on l'affecte
   const timeStamp = Date.now();
   seances[`seance-${timeStamp}`]= tableau; // timeStamp est notre clé, tableau contient le nom de la seance, la date , la durée
 
-  this.setState({seances : seances});
+  this.setState({seances : seances}); // on met à jour notre state, qui va stocker en BDD par la suite
 
   };
   render(){

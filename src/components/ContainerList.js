@@ -7,7 +7,7 @@ class ContainerList extends React.Component{
   }
 
   componentWillMount(){
-    this.ref = base.syncState('/', {
+    this.ref = base.syncState('/seance/', {
       context : this,
       state: 'seances'
     });
@@ -17,14 +17,12 @@ class ContainerList extends React.Component{
   	const seances = Object
   	.keys(this.state.seances)
   	.map(key => <Listing key={key} seance={this.state.seances[key]} />);
-
+    // Parcours de notre state afin d'afficher nos seances via le component Listing
     return(
       <div>
       	<h3 className="text-center">List of your seances !</h3>
-
         {seances}
-
-      </div>
+      </div> // on appelle plus notre component mais directement la variable qui boucle sur notre state, c'est cette variable qui va appeler le component
     )
   }
 

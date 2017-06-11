@@ -1,0 +1,11 @@
+.addTrain{padding:20px;text-align:center;margin-left:auto;margin-right:auto;}
+.addTrain .addTrain-box{border:4px solid #46b8da;border-radius:5px;padding:10px;}
+.addTrain input{display:inline-block;width:auto;}
+.addTrain select{width:auto;display:inline-block;}
+
+@media screen and (min-width :40rem){
+	.addTrain{width:50%;}
+}
+@media screen and (min-width :60rem){
+	.addTrain{width:33.33%;}
+}

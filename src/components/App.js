@@ -1,5 +1,5 @@
 import React from 'react';
-import base from '../base';
+//import base from '../base';
 import '../style/app.css';
 class App extends React.Component{
 
@@ -19,6 +19,18 @@ class App extends React.Component{
     this.context.router.transitionTo(`/pseudo/${pseudo}/addlist`);
   };
 
+  addTrainning = e => {
+    event.preventDefault();
+    const pseudo  = (this.props.params.pseudo);
+    this.context.router.transitionTo(`/pseudo/${pseudo}/addtrainning`);
+  };
+
+  showTrainning = e => {
+    event.preventDefault();
+    const pseudo = (this.props.params.pseudo);
+    this.context.router.transitionTo(`/pseudo/${pseudo}/showtrainning`);
+  };
+
   render(){
     return(
       <div className="app">
@@ -28,6 +40,12 @@ class App extends React.Component{
         </form>
         <form className="form" onSubmit={e => this.addListing(e)}> 
           <button type="submit" className="btn btn-info">add on list !</button>
+        </form>
+        <form className="form" onSubmit={e => this.addTrainning(e)}>
+          <button type="submit" className="btn btn-info">add a new trainning !</button>
+        </form>
+        <form className="form" onSubmit={e => this.showTrainning(e)}>
+          <button type="submit" className="btn btn-info">Show your trainning ! </button>
         </form>
       </div>
     )
