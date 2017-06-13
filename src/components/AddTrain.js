@@ -11,7 +11,7 @@ class AddTrain extends React.Component{
 	      state: 'trainning'
 		});
 	}
-	addTrain = event => {
+	addTrain = (event) => {
 		event.preventDefault();
 		const startDate=  this.startDate.value;
 		const endDate = this.endDate.value;
