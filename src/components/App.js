@@ -19,13 +19,13 @@ class App extends React.Component{
     this.context.router.transitionTo(`/pseudo/${pseudo}/addlist`);
   };
 
-  addTrainning = e => {
+  addTrainning = (event) => {
     event.preventDefault();
     const pseudo  = (this.props.params.pseudo);
     this.context.router.transitionTo(`/pseudo/${pseudo}/addtrainning`);
   };
 
-  showTrainning = e => {
+  showTrainning = (event) => {
     event.preventDefault();
     const pseudo = (this.props.params.pseudo);
     this.context.router.transitionTo(`/pseudo/${pseudo}/showtrainning`);
